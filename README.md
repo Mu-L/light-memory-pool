@@ -1,5 +1,7 @@
 # 基于Arrow的轻量内存池
 
+[完整文档与介绍](https://hmpy6adnp5.feishu.cn/docx/BEKBdq0egoxmxNx3X3ZcHzkUnwd?pre_pathname=%2Fdrive%2Fhome%2F)
+
 这个项目的内存池是基于[Apache Arrow项目](https://github.com/apache/arrow)的衍生版本。我们将Arrow项目中复杂的核心结构——内存池——完全剥离出来，形成了这个独立的项目。由于原始的内存池与Arrow项目本身的工具有深度依赖关系，因此我们在这个项目中对内存池进行了一些深度移除和改造，以保持与原始Arrow内存池的基础功能一致。一些改动包括：
 
 - 分离allocator与memory_pool
